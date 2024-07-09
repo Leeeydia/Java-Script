@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> WEB1 - Java Script </title>
+<meta charset="utf-8">
+  </head>
+
+  <body>
+<h1><a href="index.html">WEB</a></h1>
+<input id ="night_day" type="button" value="night" onclick="
+if(document.querySelector('#night_day').value === 'night'){ 
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';
+document.querySelector('#night_day').value = 'day';}
+else{
+document.querySelector('body').style.backgroundColor = 'white';
+document.querySelector('body').style.color = 'black';
+document.querySelector('#night_day').value = 'night';}
+">
+
+<!-- 추가설명 : id 값을 night_day로 주었으니 if 문장에서 body 대신 id값을 넣어서 버튼을 타겟팅
+ 할 수 있고 그 다음 이항연산자 ===로 인해 현재 value 가 night이면 (값이 참) 밑에 작성한 코드가 실행이 되고
+ (백그라운드 블랙 , 컬러 화이트), 실행이 된 후에 value 갑은 day를 가진다. 즉 버튼의 이름이 day로 바뀜
+ 그 상황에서 다시 버튼을 보면 버튼의 이름은 day 즉 맨 위에 id값 (#night_day).value는 day 상태
+ 이후 코드를 보면 value===night인데 현재 value 값은 day니까 eles 됨
+ 때문에 if 절 코드는 무시됨 else 코드 실행됨 (백그라운드 컬러 화이트 , 컬러 블랙) id value 값 night -->
+<ol>
+  <li><a href="1.html">HTML</a></li>
+  <li><a href="2.html">CSS</a></li>
+  <li><a href="3.html">JavaScript</a></li>
+</ol>
+<h2>Java Script</h2>
+<p>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+  Sed cumque laboriosam sit dolore quae sapiente beatae. Eos eum id of ficia?
+  Facere dolorem sit eius dicta repellendus alias quos laborum optio?
+</p>
+</body>
+</html>
